@@ -1,0 +1,16 @@
+.banner {
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    padding-top: 3.4rem;
+    background: url("../assets/bg.png") top center / cover;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 4.5rem;
+  }
+}
