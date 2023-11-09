@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link, Outlet } from "react-router-dom";
+import Container from "../../ui/Container";
 
 const Header = styled.header`
   height: 3.4rem;
@@ -95,30 +96,31 @@ const StyledNavLink = styled(Link)`
 function Navigation() {
   return (
     <>
-      <Header className="container">
-        <Nav>
-          <BrandContainer>
-            <Link to="/">
-              <BrandImage src="./logo.svg" alt="logo" />
-            </Link>
-            <Link to="/">
-              <BrandName>Habbits</BrandName>
-            </Link>
-          </BrandContainer>
-          <NavList className="header__list">
-            <li>
-              <StyledNavLink to="/">Home</StyledNavLink>
-            </li>
-            <li>
-              <StyledNavLink to="/app">App</StyledNavLink>
-            </li>
-            <li>
-              <StyledNavLink to="/about">About Us</StyledNavLink>
-            </li>
-          </NavList>
-        </Nav>
-      </Header>
-
+      <Container>
+        <Header className="container">
+          <Nav>
+            <BrandContainer>
+              <Link to="/">
+                <BrandImage src="./logo.svg" alt="logo" />
+              </Link>
+              <Link to="/">
+                <BrandName>Habbits</BrandName>
+              </Link>
+            </BrandContainer>
+            <NavList className="header__list">
+              <li>
+                <StyledNavLink to="/">Home</StyledNavLink>
+              </li>
+              <li>
+                <StyledNavLink to="/app">App</StyledNavLink>
+              </li>
+              <li>
+                <StyledNavLink to="/about">About Us</StyledNavLink>
+              </li>
+            </NavList>
+          </Nav>
+        </Header>
+      </Container>
       <Outlet />
     </>
   );

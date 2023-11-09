@@ -83,12 +83,6 @@ body {
   height: 100vh;
 }
 
-.container {
-  width: 100%;
-  max-width: 60rem;
-  margin: 0 auto;
-}
-
 img {
   display: block;
 }
