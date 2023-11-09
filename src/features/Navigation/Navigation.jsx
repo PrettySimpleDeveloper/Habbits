@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link, Outlet } from "react-router-dom";
-import "./Navigation.scss";
 
 const Header = styled.header`
   height: 3.4rem;
