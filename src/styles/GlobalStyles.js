@@ -1,4 +1,6 @@
-@import "normalize";
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyles = createGlobalStyle`@import "normalize";
 
 :root {
   /* Blue */
@@ -95,3 +97,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
+`;
+
+export default GlobalStyles;
