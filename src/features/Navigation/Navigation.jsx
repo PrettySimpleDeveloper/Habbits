@@ -3,9 +3,11 @@ import { Link, Outlet } from "react-router-dom";
 import Container from "../../ui/Container";
 
 const Header = styled.header`
+  position: absolute;
+  right: 0;
+  left: 0;
   height: 3.4rem;
   display: block;
-  position: sticky;
   margin: 1rem auto !important;
   background-color: var(--color-grey-50);
   box-shadow: var(--shadow-blue-lg);
