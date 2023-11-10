@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyles = createGlobalStyle`@import "normalize";
+const GlobalStyles = createGlobalStyle`
+@import "normalize";
 
 :root {
   /* Blue */

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Container from "../../ui/Container";
+import LinkButton from "../../ui/LinkButton";
 
 const Banner = styled.section`
   position: absolute;
@@ -8,23 +9,27 @@ const Banner = styled.section`
   left: 0;
   height: 100vh;
   padding-top: 3.4rem;
-  background: url("/bg2.png") top center / cover;
+  background: url("/banner.png") top center / cover;
 `;
 
 const Heading = styled.h1`
   font-size: 4rem;
   text-align: center;
+  margin-top: 3rem;
 `;
 
 function Landing() {
   return (
-    <div>
+    <>
       <Banner>
-        <Container>
+        <Container className=" text-center">
           <Heading>The habit tracker you get into the habit of using</Heading>
+          <LinkButton size="medium" type="primary" className="mt-5 yelo">
+            Got to app
+          </LinkButton>
         </Container>
       </Banner>
-    </div>
+    </>
   );
 }
 
