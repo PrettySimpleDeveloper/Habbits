@@ -6,14 +6,10 @@ const Container = styled.div`
   margin: 0 auto;
 
   @media (min-width: 640px) {
-    .container {
-      max-width: 640px;
-    }
+    max-width: 640px;
   }
   @media (min-width: 768px) {
-    .container {
-      max-width: 768px;
-    }
+    max-width: 768px;
   }
 `;
 

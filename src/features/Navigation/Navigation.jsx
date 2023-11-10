@@ -121,14 +121,14 @@ function Navigation() {
             </Link>
           </BrandContainer>
           <NavList className="header__list">
-            <li>
+            {/* <li>
               <StyledNavLink to="/">Home</StyledNavLink>
+            </li> */}
+            <li>
+              <StyledNavLink to="/login">Login</StyledNavLink>
             </li>
             <li>
-              <StyledNavLink to="/app">App</StyledNavLink>
-            </li>
-            <li>
-              <StyledNavLink to="/about">About Us</StyledNavLink>
+              <StyledNavLink to="/register">Sign up</StyledNavLink>
             </li>
           </NavList>
         </Nav>
