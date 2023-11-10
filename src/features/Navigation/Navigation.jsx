@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { Link, Outlet } from "react-router-dom";
-import Container from "../../ui/Container";
 
 const Header = styled.header`
   position: absolute;
@@ -12,9 +11,22 @@ const Header = styled.header`
   background-color: var(--color-grey-50);
   box-shadow: var(--shadow-blue-lg);
   border-radius: var(--border-radius-md);
-  width: 100%;
   border: 1px solid var(--color-brand-100);
   z-index: 7777;
+
+  max-width: 60rem;
+  margin: 0 auto;
+
+  @media (min-width: 640px) {
+    .container {
+      max-width: 640px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
 `;
 
 const BrandContainer = styled.div`
@@ -98,31 +110,30 @@ const StyledNavLink = styled(Link)`
 function Navigation() {
   return (
     <>
-      <Container>
-        <Header className="container">
-          <Nav>
-            <BrandContainer>
-              <Link to="/">
-                <BrandImage src="./logo.svg" alt="logo" />
-              </Link>
-              <Link to="/">
-                <BrandName>Habbits</BrandName>
-              </Link>
-            </BrandContainer>
-            <NavList className="header__list">
-              <li>
-                <StyledNavLink to="/">Home</StyledNavLink>
-              </li>
-              <li>
-                <StyledNavLink to="/app">App</StyledNavLink>
-              </li>
-              <li>
-                <StyledNavLink to="/about">About Us</StyledNavLink>
-              </li>
-            </NavList>
-          </Nav>
-        </Header>
-      </Container>
+      <Header>
+        <Nav>
+          <BrandContainer>
+            <Link to="/">
+              <BrandImage src="./logo.svg" alt="logo" />
+            </Link>
+            <Link to="/">
+              <BrandName>Habbits</BrandName>
+            </Link>
+          </BrandContainer>
+          <NavList className="header__list">
+            <li>
+              <StyledNavLink to="/">Home</StyledNavLink>
+            </li>
+            <li>
+              <StyledNavLink to="/app">App</StyledNavLink>
+            </li>
+            <li>
+              <StyledNavLink to="/about">About Us</StyledNavLink>
+            </li>
+          </NavList>
+        </Nav>
+      </Header>
+
       <Outlet />
     </>
   );

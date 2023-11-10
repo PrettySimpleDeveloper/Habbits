@@ -84,9 +84,6 @@ body {
   height: 100vh;
 }
 
-img {
-  display: block;
-}
 
 a {
   text-decoration: none;
