@@ -4,7 +4,11 @@ const Form = styled.form`
   ${(props) =>
     props.type === "regular" &&
     css`
-      padding: 2.4rem 4rem;
+      padding: 1rem 3rem;
+
+      margin: 2em auto;
+      width: 90%;
+      max-width: 450px;
 
       /* Box */
       background-color: var(--color-grey-0);

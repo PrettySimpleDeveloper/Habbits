@@ -3,6 +3,7 @@ import Button from "../../ui/Button";
 import Form from "../../ui/Form";
 import Input from "../../ui/Input";
 import FormRowVertical from "../../ui/FormRowVertical";
+import { Link } from "react-router-dom";
 // import SpinnerMini from "../../ui/SpinnerMini";
 
 function LoginForm() {
@@ -47,6 +48,10 @@ function LoginForm() {
           {/* {isLoading ? <SpinnerMini /> : "Login"} */}
           Login
         </Button>
+      </FormRowVertical>
+
+      <FormRowVertical>
+        <Link className="text-center">Don't have an account?</Link>
       </FormRowVertical>
     </Form>
   );

@@ -57,6 +57,11 @@ const GlobalStyles = createGlobalStyle`
   --border-radius-md: 7px;
   --border-radius-lg: 9px;
 
+
+  // Brak Points
+  --break-md : 640px;
+  --break-lg: 768px;
+
   /* For dark mode */
   --image-grayscale: 0;
   --image-opacity: 100%;
