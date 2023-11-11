@@ -77,6 +77,8 @@ function Landing() {
           </div>
         </Container>
       </HowToWork>
+
+      <LandingFooter />
     </>
   );
 }
