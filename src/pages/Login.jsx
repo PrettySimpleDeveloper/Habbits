@@ -4,7 +4,9 @@ import PartTitle from "../ui/PartTitle";
 import Container from "../ui/Container";
 
 const LoginLayout = styled.main`
-  margin: 7rem auto 0;
+  margin: 5rem auto 0;
+  padding-bottom: 5rem;
+
   border-radius: var(--border-radius-sm);
   /* background-color: var(--color-grey-800); */
 

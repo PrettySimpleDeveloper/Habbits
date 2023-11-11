@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Navigation from "./features/Navigation/Navigation";
 import GlobalStyles from "./styles/GlobalStyles";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route path="/" element={<Navigation />}>
               <Route index element={<Home />} />
               <Route path="login" element={<Login />} />
+              <Route path="register" element={<Register />} />
             </Route>
           </Routes>
         </BrowserRouter>

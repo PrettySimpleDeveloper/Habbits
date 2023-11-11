@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 // import SpinnerMini from "../../ui/SpinnerMini";
 
 function LoginForm() {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   // const { login, isLoading } = useLogin();
@@ -19,6 +20,17 @@ function LoginForm() {
 
   return (
     <Form onSubmit={handleSubmit}>
+      <FormRowVertical label="Name">
+        <Input
+          type="text"
+          id="name"
+          // This makes this form better for password managers
+          autoComplete="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          // disabled={isLoading}
+        />
+      </FormRowVertical>
       <FormRowVertical label="Email address">
         <Input
           type="email"
@@ -42,17 +54,17 @@ function LoginForm() {
       </FormRowVertical>
       <FormRowVertical>
         <Button
-          size="large"
+          size="medium"
           //  disabled={isLoading}
         >
           {/* {isLoading ? <SpinnerMini /> : "Login"} */}
-          Login
+          Sign up
         </Button>
       </FormRowVertical>
 
       <FormRowVertical>
-        <Link to="/register" className="text-center">
-          Don't have an account?
+        <Link to="/login" className="text-center">
+          Have an account?
         </Link>
       </FormRowVertical>
     </Form>
