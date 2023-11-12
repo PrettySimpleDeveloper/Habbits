@@ -1,17 +1,24 @@
 import styled from "styled-components";
-import Habbits from "../../ui/Habbits";
-import HabbitsHeader from "../../ui/HabbitsHeader";
-import HabbitsFooter from "../../ui/HabbitsFooter";
+import Habbits from "./Habbits";
+import HabbitsHeader from "./HabbitsHeader";
+import HabbitsFooter from "./HabbitsFooter";
+import HabbitsTable from "./HabbitsTable";
+import habits from "./data";
 
 const StyledLayout = styled.main`
   margin-top: 5rem;
 `;
 
 function ApplicationLayout() {
+  const habbits = habits;
+
+  console.log(habbits);
   return (
     <StyledLayout>
       <Habbits>
         <HabbitsHeader />
+
+        <HabbitsTable habbits={habbits} />
 
         <HabbitsFooter />
       </Habbits>

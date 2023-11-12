@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const StyledHabbitsHeader = styled.div`
-  background-color: #fff;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,6 +10,8 @@ const StyledHabbitsHeader = styled.div`
 `;
 
 const HeaderLeft = styled.div`
+  background-color: #fff;
+
   min-width: 160px;
   height: 100%;
   display: flex;
@@ -20,6 +21,8 @@ const HeaderLeft = styled.div`
 `;
 
 const HeaderDates = styled.div`
+  background-color: #fff;
+
   min-width: 120px;
   border: 1px solid #e6e6e6;
   border-bottom: none;
@@ -66,6 +69,8 @@ const DatesCell = styled.div`
 `;
 
 const HeaderRight = styled.div`
+  background-color: #fff;
+
   min-width: 160px;
   max-width: 160px;
   height: 100%;
